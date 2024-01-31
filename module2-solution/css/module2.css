@@ -9,7 +9,7 @@ h1{
 h3{
     border-style: solid;
     border-width: 1px;
-    border-color:darkorchid
+    border-color:black
 }
 
 div{
@@ -23,6 +23,7 @@ div{
 }
 
 .beef{
+    color: white;
     background-color:darkred;
 }
 
