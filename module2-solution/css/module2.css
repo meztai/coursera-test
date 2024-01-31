@@ -1,8 +1,26 @@
 div{
     color: blue;
-
+    border-style: solid;
+    border-color:black;
+    border-width: 1px;
 }
 
-h3 {
-    border: 1px;
+
+
+h3{
+    border-style: solid;
+    border-width: 1px;
+    border-color:darkorchid
+}
+
+.chicken{
+    background-color: pink;
+}
+
+.beef{
+    background-color:darkred;
+}
+
+.sushi{
+    background-color: khaki;
 }
