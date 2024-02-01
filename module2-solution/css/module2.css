@@ -65,7 +65,6 @@ div {
 @media (min-width: 1200px) {
     .col-lg1, .col-lg2, .col-lg3, .col-lg4, .col-lg5, .col-lg6, .col-lg7, .col-lg8, .col-lg9, .col-lg10, .col-lg11, .col-lg12 {
         float: left;
-        border: 1px solid green;
     }
     .col-lg1{
         width: 8.33%;
