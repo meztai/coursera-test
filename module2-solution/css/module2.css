@@ -1,68 +1,79 @@
 * {
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    position: relative;
 }
 
 h1 {
     text-align: center;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
 h3 {
     border-style: solid;
     border-width: 1px;
-    border-color: black; 
+    border-color: black;
     text-align: center;
-    width: 90px;
     position: absolute;
-    top: 0;
-    right: 0; 
+    top: 0px;
+    right: 0px;
+    width: 90px;
     margin: 0;
+    padding: 5px;
 }
 
-h3.pinkchicken {
+p {
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.chicken{
+    border: 1px solid black;
+    background-color: darkgray;
+}
+
+.beef{
+    border: 1px solid black;
+    background-color: darkgray;
+}
+
+.sushi{
+    border: 1px solid black;
+    background-color: darkgray;
+}
+
+/* Styling for different menu items */
+.pinkchicken {
     background-color: pink;
 }
 
-h3.redbeef {
+.redbeef {
     background-color: darkred;
-    color: white; 
+    color: white;
 }
 
-h3.yellowsushi {
+.yellowsushi {
     background-color: khaki;
 }
 
-p { 
-    margin-top: 40px;
-    margin-left: 30px;
-}
-
-div {
-    position: relative;
-    border-style: solid;
-    border-width: 1px; /* Added missing semicolon */
-    border-color: black;
-    margin: 10px;
-}
-
-.chicken {
-    float: left;
-}
-
-.beef {
-    float: left;
-}
-
-.sushi {
-    float: left;
-}
-
-/*simple responsive framework*/
-.row{
-    width: 100%
-}
-
 /*large devices only*/
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     .col-lg1, .col-lg2, .col-lg3, .col-lg4, .col-lg5, .col-lg6, .col-lg7, .col-lg8, .col-lg9, .col-lg10, .col-lg11, .col-lg12 {
         float: left;
     }
@@ -104,49 +115,19 @@ div {
     }
 }
 
-
-
 /*medium devices only*/
-@media (min-width: 950px) and (max-width: 1199px) {
-    .col-md1, .col-md2, .col-md3, .col-md4, .col-md5, .col-md6, .col-md7, .col-lmd8, .col-md9, .col-md10, .col-md11, .col-md12 {
-        float: left;
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md6 {
+        width: 50%; /* Two items per row */
     }
-    .col-md1{
-        width: 8.33%;
-    }
-    .col-md2{
-        width: 16.66%;
-    }
-    .col-md3{
-        width: 25%;
-    }
-    .col-md4{
-        width: 33%;
-    }
-    .col-md5{
-        width: 41.66%;
-    }
-    .col-md6{
-        width: 50%;
-    }
-    .col-md7{
-        width: 58.33%;
-    }
-    .col-md8{
-        width: 66.66%;
-    }
-    .col-md9{
-        width: 74.99%;
-    }
-    .col-md10{
-        width: 83.33%;
-    }
-    .col-md11{
-        width: 91.66%;
-    }
-    .col-md12{
-        width: 100%;
+    .col-md12 {
+        width: 100%; /* One item per row */
     }
 }
 
-
+/*small devices only*/
+@media (max-width: 767px) {
+    .col-sm12 {
+        width: 100%; /* One item per row */
+    }
+}
